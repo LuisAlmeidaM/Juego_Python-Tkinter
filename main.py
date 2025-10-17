@@ -16,6 +16,9 @@ class Ventana(tk.Tk):
 
         # Centrar la ventana
         self.CentrarVentana()
+
+        # Creación del canvas
+        self.CrearCanvas()
     
     def CentrarVentana(self):
         """
@@ -32,6 +35,14 @@ class Ventana(tk.Tk):
 
         # 3. Aplicar la Geometría
         self.geometry(f"{self.anchoVentana}x{self.altoVentana}+{posicionX}+{posicionY}")
+    
+    def CrearCanvas(self):
+        # 1. Crear el objeto canvas
+        self.canvas = tk.Canvas(self, bg="green")
+
+        # 2. Posicionar el canvas en la ventana
+        self.canvas.pack(fill="both", expand=True)
+
 
 
 # Ejecución principal del programa
