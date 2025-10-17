@@ -1,0 +1,6 @@
+# Ignorar carpetas de Python y macOS
+__pycache__/
+.DS_Store
+# Ignorar entornos virtuales (si usas uno)
+venv/
+env/
